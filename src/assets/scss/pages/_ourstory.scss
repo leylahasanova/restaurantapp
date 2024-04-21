@@ -1,0 +1,125 @@
+.storyBooking {
+    padding-bottom: 80px;
+
+    .story__box {
+        @include flexbox($flexDirection: column);
+        @include media-breakpoint-down(lg) {
+            
+            height: 80vh !important;
+          }
+          @include media-breakpoint-down(md) {
+            
+            height: auto !important;
+          }
+
+        .story__text {
+            height: 50vh;
+        }
+
+        .aboutStory__pic {
+            @include flexbox($gap: 30);
+            .aboutstory1 , .aboutstory2 {
+                position:relative;
+
+            }
+
+            .aboutstory1 img,
+            .aboutstory2 img{
+                width: 462px;
+                height: 291px;
+                @include media-breakpoint-down(lg) {
+                    width:334px !important;
+                    height: 210px !important;
+                  }
+                  @include media-breakpoint-down(md) {
+                    width:250px;
+                    height: 157px;
+                  }
+            }
+            .storyBorder1, .storyBorder2 {
+                position: absolute;
+                @include boxSize(442, 271);
+                border: 1px dashed rgba(255, 255, 255, .45);
+                top: 10px;
+                right: 10px;
+                @include media-breakpoint-down(lg) {
+                    width:314px !important;
+                    height: 190px !important;
+                  }
+                  @include media-breakpoint-down(md) {
+                    width:230px;
+                    height: 137px;
+                  }
+            }
+           
+
+        }
+    }
+}
+
+.storyQuote {
+    height: 70vh;
+    // margin: -100px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 20px; 
+    
+    img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed !important;
+    }    
+
+    
+
+
+}
+
+.quoteBck {
+    position: absolute;
+    background-color: rgba(192, 113, 113, 0.65);
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    z-index: 7;
+}
+.quote {  
+    position: absolute;
+    z-index: 10;
+    align-items: center;
+    justify-content: 0;
+    flex-direction: column;
+    gap: 0px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    color: #FFFFFF;
+    top: 33% !important;
+
+    p {
+        font-size: 44px;
+        line-height: 1.146;
+        color: white;
+        max-width: 915px;
+        font-family: 'Ruthie', sans-serif;
+        padding: 18px 0 9px 0;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+          }
+    }
+
+    span {
+        font-size: 13px;
+        color: rgb(187, 147, 86);
+        font-weight: 400;
+        padding-top: 13px;
+        font-style: italic;
+    }
+}
+.quoteTitle {
+    height: 70vh !important;
+    margin: 50px 20px !important;
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Mexican Cheese Burger",
+    "price": 26.9,
+    "amount": 1,
+    "img": "./images/shop1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Oyster With Hot Sauce",
+    "price": 50.9,
+    "amount": 1,
+    "img": "./images/shop2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Honey Pancakes",
+    "price": 11.9,
+    "amount": 1,
+    "img": "./images/shop3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sweet Fruits Toast",
+    "price": 9.9,
+    "amount": 1,
+    "img": "./images/shop4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Grilled American Fillet",
+    "price": 9.9,
+    "amount": 1,
+    "img": "./images/shop5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Roast Sea Trout",
+    "price": 38.9,
+    "amount": 1,
+    "img": "./images/shop6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Grilled Seafood Paella",
+    "price": 34.9,
+    "amount": 1,
+    "img": "./images/shop7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Meat Ball Soup",
+    "price": 25.9,
+    "amount": 1,
+    "img": "./images/shop8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Spaghetti Carbonara",
+    "price": 20.9,
+    "amount": 1,
+    "img": "./images/shop9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Sushi Platter",
+    "price": 42.9,
+    "amount": 1,
+    "img": "./images/shop10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Chicken Parmesan",
+    "price": 22.9,
+    "amount": 1,
+    "img": "./images/shop11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Miso Glazed Salmon",
+    "price": 30.9,
+    "amount": 1,
+    "img": "./images/shop12.jpg"
+  }
+]

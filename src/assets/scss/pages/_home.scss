@@ -1,0 +1,364 @@
+//  SPECIAL DISHES
+
+.special {
+  padding: 110px 0 0;
+  @include flexbox();
+  width: 100%;
+  position: relative;
+
+  .special__bck {
+    background-image: linear-gradient(transparent, rgba(27, 26, 26, 0.65)),
+      url(../../images/menuTitle.jpg) !important;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 110px 0;
+    @include flexbox();
+    width: 95%;
+    position: relative;
+    z-index: 4;
+
+    .special__dishes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: white;
+      width: 95%;
+      z-index: 3;
+      position: relative;
+      padding: 90px 80px 50px;
+      @include media-breakpoint-down(lg) {
+        padding: 50px 20px 116px;
+      }
+
+      .specialBorder {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px dashed rgba(187, 147, 86, 0.5);
+        position: absolute;
+        z-index: -1;
+      }
+
+      .dish__head {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h2 {
+          @include sectionh2();
+        }
+
+        h3 {
+          @include sectionh3();
+        }
+
+        p {
+          @include menu-p();
+        }
+      }
+
+      .dish__box {
+        @include flexbox();
+        flex-wrap: wrap !important;
+        height: 354px;
+        gap: 13px;
+        @include media-breakpoint-down(md) {
+          height: 1335.3px;
+          width: 100% !important;
+        }
+
+        .dish__box__box {
+          @include flexbox($alignItems: flex-start);
+          max-width: 49%;
+
+          // @include boxSize(382, 148);
+
+          @include media-breakpoint-down(md) {
+            flex-direction: column;
+            height: 324px !important;
+            width: 557px !important;
+          }
+
+          .dish__img {
+            position: relative;
+            // background-image: url(../images/menu1.jpg);
+            margin-right: 30px;
+            background-position: center;
+            background-size: cover;
+            @include boxSize(100, 100);
+
+            @include media-breakpoint-down(sm) {
+              width: 133px;
+              height: 133px;
+            }
+
+            .hoverBox {
+              position: absolute;
+              top: 0;
+              right: 0;
+              opacity: 0;
+              transition: 0.5s;
+              background-color: rgba(0, 0, 0, 0.5);
+              @include boxSize(100, 100);
+              @include flexbox();
+              i {
+                background-color: $primary-color;
+                border-radius: 50%;
+                color: white;
+                opacity: 1;
+                padding: 10px;
+                cursor: pointer;
+              }
+            }
+
+            &:hover .hoverBox {
+              opacity: 1;
+            }
+          }
+
+          .dish__text {
+            width: 131%;
+
+            h3 {
+              font-family: "Poppins", sans-serif;
+              margin: 0 18px 8px 0;
+              font-size: 18px;
+              font-weight: 600;
+              color: $secondary-color;
+            }
+
+            h2 {
+              font-family: "Poppins", sans-serif;
+              font-size: 18px;
+              color: $primary-color;
+              font-weight: 600;
+            }
+
+            p {
+              @include menu-p();
+              border-top: 1px dotted #a5a5a5;
+              padding-top: 10px;
+            }
+          }
+
+          @include media-breakpoint-down(sm) {
+            height: 400px;
+            width: 100%;
+            @include flexbox($flexDirection: column);
+          }
+        }
+      }
+    }
+  }
+}
+
+.fullscreen-image {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.row-divider-top,
+.row-divider-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  z-index: 88;
+  text-align: center;
+}
+.row-divider-top {
+  top: -10px;
+}
+.row-divider-bottom {
+  bottom: -4px;
+}
+.row-divider-top svg {
+  -webkit-transform: rotate(180deg);
+  -khtml-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: -1px;
+}
+
+.news {
+  padding:  0 20px 110px 20px !important;
+  @include flexbox();
+
+  .latestNews {
+    @include flexbox($flexDirection: column);
+
+    .newsHeading {
+      padding: 30px;
+      text-align: center;
+
+      h2 {
+        @include sectionh2();
+      }
+
+      h3 {
+        @include sectionh3();
+      }
+    }
+
+    .newsBox {
+      // @include flexbox($gap: 30);
+      @include media-breakpoint-down(md) {
+        .newsContent:nth-child(2),
+        .newsContent:nth-child(3) {
+          display: none;
+        }
+      }
+      .newsContent {
+        width: 28%;
+        @include flexbox($flexDirection: column);
+        @include media-breakpoint-down(md) {
+          width: 82% !important;
+        }
+
+        ul {
+          @include flexbox($gap: 5, $alignItems: flex-start);
+          li:first-child {
+            color: #686868 !important;
+          }
+          @include media-breakpoint-down(lg) {
+            margin-left: 0 !important;
+          }
+
+          li {
+            list-style: none;
+            color: $primary-color;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+          }
+        }
+
+        .newsContent_heading {
+          font-weight: 700;
+          font-size: 20px;
+          color: black;
+          margin-bottom: 20px;
+          text-decoration: none !important;
+          transition: 0.5s;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        .newsImg {
+          background-position: center;
+          background-size: cover;
+          width: 270px;
+          height: 217px;
+          @include media-breakpoint-down(lg) {
+            width: 213px !important;
+            height: 155px !important;
+          }
+          &:hover {
+            size:120%;
+
+          }
+        }
+
+        p {
+          @include menu-p();
+          margin-top: 20px;
+          margin-left: 20px;
+          @include media-breakpoint-down(lg) {
+            margin-left: 0 !important;
+          }
+        }
+
+        button {
+          @include button(
+            $color: $primary-color,
+            $border: 2px solid $primary-color
+          );
+        }
+      }
+    }
+  }
+}
+
+// MENU
+.menuBoard {
+  // background-image: url(../img/bg-parallax6.jpg) !important;
+  background-position: center;
+}
+
+
+// BLOG
+.news {
+  padding: 110px 20px 90px;
+  @include flexbox();
+
+  .latestNews {
+    @include flexbox($flexDirection: column);
+
+    .newsHeading {
+      padding: 30px;
+      text-align: center;
+
+      h2 {
+        @include sectionh2();
+      }
+
+      h3 {
+        @include sectionh3();
+      }
+    }
+
+    .newsBox {
+      @include flexbox($gap: 30);
+
+      .newsContent {
+        width: 28%;
+        @include flexbox($flexDirection: column);
+
+        ul {
+          @include flexbox($gap: 5, $alignItems: flex-start);
+
+          li {
+            list-style: none;
+            color: $primary-color;
+            font-size: 12px;
+          }
+        }
+
+        a {
+          font-weight: 700;
+          font-size: 20px;
+          color: black;
+          margin-bottom: 20px;
+        }
+
+        .newsImg {
+          // background-image: url(../img/blog1.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 270px;
+          height: 217px;
+        }
+
+        p {
+          @include menu-p();
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+
+        button {
+          @include button(
+            $color: $primary-color,
+            $border: 2px solid $primary-color
+          );
+        }
+      }
+    }
+  }
+}

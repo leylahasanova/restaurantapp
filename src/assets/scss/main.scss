@@ -1,0 +1,26 @@
+@import "../bootstrap-5.0.2/scss/bootstrap-grid.scss";
+// abstract
+
+@import "../scss/abstracts/mixins";
+@import "../scss/abstracts/variables";
+// // layout
+@import "./layout/header";
+@import "./layout/footer";
+
+
+// // pages
+@import "./pages/home";
+@import "./pages/shop";
+@import "./pages/cart";
+@import "./pages/ourstory";
+
+
+// @import "./pages/ourstory";
+
+// components
+@import "./components/slider";
+@import "./components/about";
+@import "./components/menu";
+@import "./components/pageTitle";
+
+

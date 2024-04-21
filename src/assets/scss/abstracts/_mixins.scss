@@ -1,0 +1,95 @@
+@mixin button ($padding: 0 32px,
+    $background-color: transparent,
+    $border: 2px solid #222,
+    $color: #222,
+    $borderRadius: 51px
+) {
+    padding: $padding;
+    background-color: $background-color;
+    border: $border;
+    color: $color;
+    border-radius: $borderRadius;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 47px;
+}
+@mixin size ( 
+    $w:100%,
+    $h: 100
+) {
+    width: $w;
+    height: $h + vh;
+}
+@mixin boxSize ($w, $h) {
+    width: $w + px;
+    height: $h + px;
+}
+
+@mixin flexbox (
+    $alignItems: center,
+    $justifyContent: center,
+    $flexDirection: row,
+    $gap: 0
+){
+   align-items: $alignItems;
+   justify-content: $justifyContent;
+   flex-direction: $flexDirection;
+   gap: $gap +px;
+   display: flex;
+   @include media-breakpoint-down(sm) {
+    flex-direction:column;
+}
+}
+@mixin sliderHead () {
+    font-family: $font-abril;
+    font-size: 85px;
+    @include media-breakpoint-down(lg) {
+        font-size: 24px;
+    }
+
+}
+@mixin menu-p (
+    $fontSize: 15px,
+    $fontFamily: $font-stack,
+    $color: $gray-color,
+    $line-height: 23px
+) {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    color: $color;
+    line-height: $line-height;
+}
+@mixin sectionh2 (
+    $fontSize: 45px,
+    $fontFamily: $font-cursive
+) {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    color: $primary-color;
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+    }
+}
+
+@mixin sectionh3 (
+    $fontSize: 45px,
+    $margin: -4px 0 14px, 
+    $fontFamily: $font-abril
+) {
+    font-size: $fontSize;
+    margin: $margin;
+    font-family: $fontFamily;
+    color: $secondary-color;
+    font-weight: 700;
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+    }
+}
+@mixin price () {
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    color: #bb9356;
+    font-weight: 600;
+    margin-bottom: 8px
+}

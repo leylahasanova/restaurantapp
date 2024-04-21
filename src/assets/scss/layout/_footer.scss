@@ -1,0 +1,91 @@
+footer {
+    background-color: #222;
+    padding: 105px 0 90px;
+    @include flexbox();
+    color: white;
+    min-height: 100%;
+    position: relative;
+    margin: 0 20px 20px;
+    .footer {
+        @include flexbox($gap:20);
+        height: 50vh !important;
+        @include media-breakpoint-down(md) {
+            min-height: 500px !important;
+        }
+        .footer-divider {
+            position: absolute;
+            top: -12px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            svg{
+                fill: #222 !important;
+                fill-rule: evenodd;
+        }
+        }
+        
+    .iconDiv {
+        width:25%;
+        @include media-breakpoint-down(md) {
+            width:35%;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 26px;
+        }
+
+        .icon {
+            @include flexbox();
+            @include media-breakpoint-down(md) {
+                flex-direction: row !important;
+            }
+
+            i {
+                background-color: $secondary-color;
+                @include boxSize (42, 42);
+                color: white;
+            }
+        }
+    }
+    .footerP {
+        text-align:center;
+        h2 {
+            font-family: 'Ruthie',sans-serif;  
+          }
+          p {
+            margin: 0 30px;
+            color: #919191;
+             padding: 0 50px;
+             @include media-breakpoint-down(lg) {
+                padding: 0 !important;
+                display: none;
+             }
+          }
+    }
+    .inp {
+        input {
+            height: 42px;
+    border: none;    
+    background-color: #1c1c1c;
+    color: rgba(255, 255, 255, .55);
+    font-weight: 300;
+    font-style: italic;
+    padding: 8px 55px 8px 15px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+   
+        }
+    }
+    
+}
+}
+.adress p {
+    margin-top:20px !important;
+    color: white !important;
+}
+.adress i {
+    margin-right: 10px;
+}

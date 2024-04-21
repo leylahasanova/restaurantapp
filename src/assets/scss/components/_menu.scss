@@ -1,0 +1,199 @@
+.menu {
+    padding: 110px 20px 90px;
+    @include flexbox();
+  
+    .menuSection {
+        @include flexbox($flexDirection: column);
+  
+        .menuButton {
+            @include button();
+            margin-top: 50px;
+            &:hover {
+              @include button($color: white, $border: 2px solid $primary-color);
+              background-color: $primary-color;  
+              transition: 0.5s !important;       
+  
+          }
+  
+        }
+  
+        .menuHeading {
+            
+            @include flexbox($flexDirection: column);
+            text-align: center;
+            margin-bottom: 30px;
+            
+  
+            h2 {
+                @include sectionh2();
+            }
+  
+            h3 {
+                @include sectionh3();
+            }
+  
+            p {
+                @include menu-p();
+                width: 60%;
+                @include media-breakpoint-down(md) {
+              width: 100%;
+            }
+            }
+  
+            ul {
+                
+              display: flex;
+              flex-wrap: wrap;
+  
+                li {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 10px 13px;
+                    list-style: none;
+                    cursor: pointer;
+                    &:hover {
+                      color: $primary-color;
+                    }
+                    &.active {
+                      color: #bb9356;
+                    }
+                }
+            }
+        }
+  
+        .menuBox {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            // min-height: 120vh;
+            // min-height:710px;
+            @include flexbox();
+            flex-wrap: wrap !important;
+  
+            @include media-breakpoint-down(lg) {
+                display: flex;
+                flex-direction: column !important;
+            }
+  
+            .modal-body {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            
+            }
+  
+            .menuBox__box {
+              width: 50% !important;
+              @include flexbox($alignItems: flex-start);
+                @include media-breakpoint-down(lg) {
+                    display: flex;
+                    // flex-direction: column;
+                    flex-wrap: wrap !important;
+                    width: 100% !important;
+                    
+                }  
+                
+                &:nth-child(3), &:nth-child(4), &:nth-child(7), &:nth-child(8) {
+                  flex-direction: row-reverse;
+                  @include media-breakpoint-down(lg) {
+                    flex-direction: row !important;
+                  }
+                }
+                // her cut elementi secir
+                &:nth-child(2n), :nth-child(2n + 2), &:nth-child(2n + 4), &:nth-child(2n + 6), &:nth-child(2n + 8){
+                  @include media-breakpoint-down(lg) {
+                    flex-direction: row-reverse !important;
+                  }
+                }     
+                
+                .mealImg {
+                    position: relative;
+                    // background-image: url(../img/menu1.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    width: 50%;
+                    height: 340px;
+                    // height: 340px;
+                    // height: 100%;
+                    @include media-breakpoint-down(md) {
+                      width:100%;
+                    }
+                    .mealImg_img {
+                      // width:280px;
+                      // height: 285px;
+                      width: 100%;
+                      height: 340px;
+  
+  
+                    }
+                    .hoverBox {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        opacity: 0;
+                        transition: 0.5s;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 100%;
+                        height: 100%;
+                        @include flexbox();
+                        i {
+                            background-color: $primary-color;
+                            border-radius:50%;
+                            color:white;
+                            opacity:1;
+                            padding:10px;
+                            cursor: pointer;
+                            
+                        }
+                    }
+  
+                    &:hover .hoverBox {
+                        opacity: 1;
+                    }
+  
+                }
+                }
+  
+                .meal__text {
+                    padding: 30px;
+                    text-align: center;
+                    height: 340px;
+                    width: 50%;
+                    position: relative;
+                    @include media-breakpoint-down(md) {
+                      width: 100%;
+                    }
+                    .specialBorder {
+                      top: 10px;
+                      left: 10px;
+                      right: 10px;
+                      bottom: 10px;
+                      border: 1px dashed rgba(187, 147, 86, 0.5);
+                      position: absolute;
+                      z-index: -1;
+                  }
+  
+  
+                    h3 {
+                        font-family: 'Poppins', sans-serif;
+                        margin: 0 18px 8px 0;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $secondary-color;
+  
+                    }
+  
+                    h2 {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        color: $primary-color;
+                        font-weight: 600;
+                    }
+  
+                    p {
+                        @include menu-p();
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }

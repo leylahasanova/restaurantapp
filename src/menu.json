@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "price": "$31.95",
+      "name": "Grilled American Fillet",
+      "description": "Pork fillet, ginger, garlic, honey, pepper & canola oil. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu1.jpg", 
+      "category": "Dinner"
+    },
+    {
+      "id": 2,
+      "price": "$39.95",
+      "name": "Grilled Seafood Paella",
+      "description": "Monkfish, onion, paella rice, garlic & smoked paprika. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu2.jpg",
+      "category": "Breakfast"
+    },
+    {
+      "id": 3,
+      "price": "$48.95",
+      "name": "Roast Sea Trout",
+      "description": "Roast trout, English asparagus, watercress & royals. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu3.jpg",
+      "category": "Lunch"
+    },
+    {
+      "id": 4,
+      "price": "$20.95",
+      "name": "Smoked Paprika Hum",
+      "description": "Red peppers, roasted garlic, lemon slices, olives & mint. Creamy crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu4.jpg",
+      "category": "Dessert"
+    },
+    {
+      "id": 5,
+      "price": "$25.95",
+      "name": "Meat Ball Soup",
+      "description": "Pork fillet, ginger, garlic, honey, pepper & canola oil. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu5.jpg",
+      "category": "Drinks"
+    },
+    {
+      "id": 6,
+      "price": "$50.95",
+      "name": "Oyster With Hot Sauce",
+      "description": "Monkfish, onion, paella rice, garlic & smoked paprika. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu6.jpg",
+      "category": "Lunch"
+    },
+    {
+      "id": 7,
+      "price": "$26.95",
+      "name": "Mexican Cheese Burger",
+      "description": "Roast trout, English asparagus, watercress & royals. Creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu7.jpg",
+      "category": "Dinner"
+    },
+    {
+      "id": 8,
+      "price": "$20.95",
+      "name": "Smoked Paprika Hum",
+      "description": "Red peppers, roasted garlic, lemon slices, olives & mint. Creamy crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping.",
+      "img": "./images/menu8.jpg",
+      "category": "Drinks"
+    }
+  ]
+  

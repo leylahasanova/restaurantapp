@@ -1,0 +1,142 @@
+.header {
+  @include flexbox(center, space-evenly, row!important);
+  background-color: transparent;
+  height: 120px;
+  position: sticky !important;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+  @include media-breakpoint-down(lg) {
+     justify-content: space-between
+  }
+
+
+  // position: absolute;
+  .header__pages,
+  .header__menu {
+    @include flexbox(center, center, row);
+    gap: 20px;
+    font-weight: 700;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      flex-direction: row !important;
+      height: 100vh;
+    }
+    ul {
+      @include flexbox(center, center, row);
+      gap: 20px;
+      margin-top: 10px;
+      @include media-breakpoint-down(md) {
+        flex-direction:row !important;
+        font-size: 14px;
+      }
+
+      // @include media-breakpoint-down(lg) {
+      //   display: none;
+       
+
+
+      // }
+      li {
+        a {
+          color: white;
+          font-family: $font-stack;
+          text-decoration: none;
+          transition: 0.5s;
+          &:hover {
+            color: $primary-color;
+          }
+          &.active {
+            color: #bb9356;
+          }
+        }
+
+        list-style: none;
+      }
+    }
+    ul.is-open {
+      header {
+        height: 100vh;
+      }
+      @include media-breakpoint-down(lg) {
+        display: block;
+        // width: 100% !important;
+        // height:100vh !important;
+        background-color: #BB9356;
+        
+      }
+
+    }
+    .header__menu__icon {
+      display: none;
+      font-size: 30px;
+      color: white;
+      // @include media-breakpoint-down(lg) {
+      //   display: block;
+      // }
+    }
+  }
+}
+
+.header.active {
+  background: white;
+  position:fixed !important;
+  height: 80px;
+  transition: 1s;
+  width: 95.3%;
+    margin-left: -45px;
+    padding: 33px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include media-breakpoint-down(lg) {
+      margin-left: -20px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: -5px !important;
+    }
+    @include media-breakpoint-down(xl) {
+      margin-left: -20px;
+    }
+}
+
+
+.header.active a,
+.header.active .header__logo h3 {  
+  color: black !important;
+}
+
+.header {
+  .header__logo {
+    font-family: $font-cursive;
+    font-size: 48px;
+    color: white;
+  }
+}
+
+.header {
+  .header__pages {
+    button {
+      @include button(0 9px, $primary-color, none, white, 1px);
+      line-height: 25px;
+      font-weight: 700;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.basketCount {
+  color: white;
+  background: #BB9356;
+  border-radius: 50%;
+  padding: 2px 7px;
+  position: absolute;
+  bottom: 30px;
+  right: -17px;
+  font-size: 12px;
+}
+
+// .footer {
+//   height: 100vh;
+// }
