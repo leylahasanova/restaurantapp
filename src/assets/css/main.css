@@ -4,8 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ruthie&display=swap');
-
 .container,
 .container-fluid,
 .container-xxl,
@@ -4349,6 +4347,12 @@ footer .footer .inp input {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 575.98px) {
+  .adress {
+    padding: 0 50px !important;
+  }
+}
+
 .adress p {
   margin-top: 20px !important;
   color: white !important;
@@ -4524,6 +4528,12 @@ footer .footer .inp input {
     flex-direction: column;
   }
 }
+@media (max-width: 575.98px) {
+  .special .special__bck .special__dishes .dish__box .dish__box__box .dish__img .hoverBox {
+    width: 100%;
+    height: 100%;
+  }
+}
 .special .special__bck .special__dishes .dish__box .dish__box__box .dish__img .hoverBox i {
   background-color: #BB9356;
   border-radius: 50%;
@@ -4598,6 +4608,11 @@ footer .footer .inp input {
 
 .row-divider-bottom {
   bottom: -4px;
+}
+@media (max-width: 575.98px) {
+  .row-divider-bottom {
+    bottom: -6px;
+  }
 }
 
 .row-divider-top svg {
@@ -4916,6 +4931,11 @@ footer .footer .inp input {
     flex-direction: column;
   }
 }
+@media (max-width: 575.98px) {
+  .shopBox__box {
+    width: 100%;
+  }
+}
 .shopBox__box .shopImg {
   position: relative;
 }
@@ -4973,11 +4993,21 @@ footer .footer .inp input {
 .shopBox__box .shopText p:hover {
   color: #BB9356;
 }
+@media (max-width: 575.98px) {
+  .shopBox__box .shopText p {
+    font-size: 24px;
+  }
+}
 .shopBox__box .shopText span {
   font-size: 16px;
   color: #bb9356;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+@media (max-width: 575.98px) {
+  .shopBox__box .shopText span {
+    font-size: 24px;
+  }
 }
 
 .cartSection {

@@ -103,6 +103,10 @@
               background-color: rgba(0, 0, 0, 0.5);
               @include boxSize(100, 100);
               @include flexbox();
+              @include media-breakpoint-down(sm) {
+                width: 100%;
+                height: 100%;
+              }
               i {
                 background-color: $primary-color;
                 border-radius: 50%;
@@ -175,6 +179,9 @@
 }
 .row-divider-bottom {
   bottom: -4px;
+  @include media-breakpoint-down(sm) {
+    bottom: -6px; 
+  }
 }
 .row-divider-top svg {
   -webkit-transform: rotate(180deg);

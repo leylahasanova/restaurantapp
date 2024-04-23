@@ -52,10 +52,7 @@ function FooterSection() {
                     </p>
                 <p>
                 <i class="fa-solid fa-phone"></i>
-                <span>Office Telephone : 002 01065370701 
-                    <p>
-                    Mobile : 002 01065370701
-                    </p>
+                <span>002 01065370701                    
                 </span>
                   
                   </p>
