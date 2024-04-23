@@ -4078,9 +4078,10 @@
     flex-direction: column;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
   .header {
-    justify-content: space-between;
+    justify-content: space-around !important;
+    padding: 0 22px;
   }
 }
 .header .header__pages,
@@ -4104,7 +4105,6 @@
   .header .header__pages,
   .header .header__menu {
     flex-direction: row !important;
-    height: 100vh;
   }
 }
 .header .header__pages ul,

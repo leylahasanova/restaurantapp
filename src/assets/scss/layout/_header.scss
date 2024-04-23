@@ -7,9 +7,15 @@
   z-index: 999;
   width: 100%;
   overflow: hidden;
-  @include media-breakpoint-down(lg) {
-     justify-content: space-between
-  }
+  // justify-content: space-between;
+  // padding: 0 20px;
+  // @include media-breakpoint-down(lg) {
+  //    justify-content: space-between;
+  // }
+  @include media-breakpoint-down(sm) {
+    justify-content: space-around !important;
+    padding: 0 22px;
+ }
 
 
   // position: absolute;
@@ -21,8 +27,12 @@
     position: relative;
     @include media-breakpoint-down(lg) {
       flex-direction: row !important;
-      height: 100vh;
+      // height: 100vh;
     }
+    // @include media-breakpoint-down(sm) {      
+    //   height: 60px !important;
+    // }
+     
     ul {
       @include flexbox(center, center, row);
       gap: 20px;
